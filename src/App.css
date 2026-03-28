@@ -1,0 +1,165 @@
+.app {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.stats {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.add-form {
+  margin-bottom: 1rem;
+}
+
+.add-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.5rem 0.65rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.input--error {
+  border-color: #b91c1c;
+}
+
+.hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: #b91c1c;
+}
+
+.add-row button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.add-row button:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.filters {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.filter-btn:hover {
+  background: #f3f4f6;
+}
+
+.filter-btn.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.empty {
+  margin: 0;
+  padding: 1rem 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item__label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+}
+
+.todo-item__label input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.todo-item__text {
+  word-break: break-word;
+}
+
+.todo-item--done .todo-item__text {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.todo-item__delete {
+  flex-shrink: 0;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 4px;
+  color: #374151;
+}
+
+.todo-item__delete:hover {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #b91c1c;
+}
